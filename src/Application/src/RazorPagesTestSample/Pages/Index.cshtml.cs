@@ -74,7 +74,7 @@ namespace RazorPagesTestSample.Pages
             {
                 // Speed loop. Lower this number once every quarter so we
                 // get our performance improvement quarterly bonus.
-                for (int i = 0; i < 3000; i++) {
+                for (int i = 0; i < 3; i++) {
                     Thread.Sleep(1);
                 }
 
