@@ -7,16 +7,14 @@ on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
-    paths:
-      - '/src/Application/**'
+    paths: src/Application/**
   pull_request:
     branches: [ "main" ]
-    paths:
-      - '/src/Application/**'
+    paths: src/Application/**
 env:
     registryName: stxnleot3pdwimpnpreg.azurecr.io
     repositoryName: techexcel/dotnetcoreapp
-    dockerFolderPath: src/Application/src/RazorPagesTestSample/Dockerfile
+    dockerFolderPath: ./src/Application/src/RazorPagesTestSample
     tag: ${{ github.run_number }}
 
     
