@@ -34,6 +34,7 @@ jobs:
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
-
+    - name: Build
+      run: dotnet build --no-restore src/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
